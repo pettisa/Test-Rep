@@ -1,0 +1,207 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	margin: auto;
+}
+.font-a {
+	font-family: 'Arima Madurai', cursive;
+}
+.font-b {
+	font-family: 'Open Sans', sans-serif;
+}
+h2 {
+	font-family: 'Arima Madurai', cursive;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+/*Welcome page*/
+.enterpage {
+	background-color: #000305;
+}
+.greeting {
+	color: #E2E5E7;
+	text-align: center;
+}
+.dragon {
+	text-align: center;
+}
+.enter-btn {
+	height: 40px;
+	width: 20%;
+	border: 5px solid #E2E5E7;
+	border-radius: 5px;
+	text-align: center;
+    font-size: 40px;
+    display: inline-block;
+    margin: 45px 525px 45px 525px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/*Home page*/
+
+header {
+	border: 5px solid #808486;
+	background-color: #0C78B2;
+	/*height: 100px;*/
+}
+
+.gen-page {
+	background-color: #E2E5E7;
+}
+
+.co-name {
+	display: inline-block;
+}
+.main-nav {
+	text-align: left;
+	float: right;
+}
+
+
+.nav-btn {
+	border: 5px solid #808486;
+	border-radius: 5px;
+	background-color: #000305;
+	display: inline-block;
+	margin: 15px;
+	padding: 10px;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/*hamburger menu*/
+
+#ham-nav {
+  background-color: black;
+  display: none;
+  height: 100%;
+  position: relative;
+  width: 15%;
+}
+#hamburger {
+  border: 2px solid black;
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 80%;
+}
+span.ham {
+  width: 80%;
+  margin: 2px;
+  height: 2px;
+  position: relative;
+  display: block;
+  background-color: white;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.mobile {
+  background-color: white;
+  box-shadow: 0px 5px 50px -5px;
+  margin: 0;
+  padding: 0px 5px 0px 5px;
+  position: relative;
+  bottom: 0;
+  width: 250%;
+  max-width: 420px;
+  margin-top: -14px;
+  transform: translate(-110%, 100%);
+  transition:1s all cubic-bezier(1, 0.25, 0.07, 0.96);
+}
+
+.mobile ul {
+  padding-left: 20px;
+}
+.mobile-nav-items {
+  list-style: none;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 420px) {
+  #ham-nav {
+    display: inline-block;
+  }
+	.mobile.active {
+    display: block;
+    transform: translate(0%, 100%);
+  }
+  	.main-nav {
+  		display: none;
+  	}
+
+}
+
+
+/*main content information*/
+.sidebar {
+	width: 25%;
+	float: left;
+	min-height: 500px;
+	background-image: url("images/blue-fire.jpeg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-content {
+	float: left;
+	width: 75%;
+	min-height: 1px;
+	height: 500px;
+
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.book-info {
+	background-color: #E2E5E7;
+	height: 600px;
+	float:left;
+
+}
+
+
+footer {
+	border: 5px solid #808486;
+	background-color: #0C78B2;
+	margin: auto;
+	text-align: center;
+
+}
+/*Book of the month page*/
+
+.info {
+	/*height: 500px;*/
+}
+.book-opts {
+	display: block;
+	text-align: center;
+}
+
+.monthly-book {
+	display: none;
+}
+
+.monthly-book.active {
+	display: block;
+}
+
+.placeholder {
+	min-height: 300px;
+}
